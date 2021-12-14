@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VertX Greeting</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+  <h1>Greetings</h1>
+  <ol>
+  {{#each greetings}}
+    <li>{{this}} {{name}}</li>
+  {{/each}}
+  </ol>
+  <p>You look younger than {{age}}.</p>
+  {{#if robot}}
+  <p>Even though, it's ok if you are a robot.</p>
+  {{/if}}
+</body>
+</html>
